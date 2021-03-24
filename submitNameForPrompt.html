@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+body{
+background-color:#d4cbd6;}
+h2{color:#6c0084; text-align:center;}
+label{color:#534756;}
+.parent{display:flex; justify-content:center; align-content:center;}
+.child{border: 1px solid black; border-radius: 5px; width: 500px; height:250px; background-color:white;}
+</style>
+</head>
+<body>
+<form onsubmit = "checkName()" name = "form1">
+<h2> FORM AND JAVASCRIPT <h2>
+<div class = "parent">
+<div class = "child">
+<label>NAME:</label>
+<br>
+<input type = "text" name = "name">
+<br> <br>
+<input type = "submit">
+</div>
+</div>
+<script>
+function checkName()
+{
+if (form1.name.value==""){
+alert("Enter name first")
+}
+else
+{
+alert("Your name is " + form1.name.value)
+}
+return false
+}
+</script>
+</form>
+</body>
+</html>
